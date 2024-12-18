@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+.locations {
+  font-family: "Jost", sans-serif;
+}
+.locations_details,
+.locations_details_2 {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+.locations_details h2,
+.locations_details_2 h2 {
+  font-size: 32px;
+  font-weight: medium;
+  color: #e7816b;
+  text-transform: capitalize;
+  line-height: 36px;
+}
+.locations_details_inner {
+  margin-top: 24px;
+}
+.locations_details_inner p {
+  font-size: 15px;
+  font-weight: 100;
+  color: #333136;
+}
+.locations_details_inner p:first-child {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.space {
+  height: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .locations_content,
+  .locations_content_2 {
+    margin-inline: 39px;
+  }
+  .locations_image {
+    border-radius: 15px;
+  }
+  .locations_details_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 164px;
+  }
+  .locations_details,
+  .locations_details_2 {
+    display: grid;
+    place-items: start;
+    text-align: left;
+    margin-inline: 75px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .locations {
+    margin-top: 40px;
+  }
+  .locations_content_2,
+  .locations_content {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+  .locations_content {
+    /* gap: 45px; */
+  }
+  .locations_image_div {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+  }
+  .location_details {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .locations_details_wrapper {
+    /* gap: 100px; */
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .locations {
+    margin-inline: 126px;
+    margin-top: 40px;
+  }
+  .locations_content_2,
+  .locations_content {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+  .locations_content {
+    /* gap: 45px; */
+  }
+  .locations_image_div {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+  }
+  .location_details {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .locations_details_wrapper {
+    /* gap: 130px; */
+  }
+}

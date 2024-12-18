@@ -1,0 +1,27 @@
+.nav_div {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  place-content: center;
+  width: 100%;
+}
+.nav_div_inner {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 24px;
+}
+.logo_image {
+  width: 202px;
+  height: 27px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin-inline: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    margin-inline: 140px;
+  }
+}
